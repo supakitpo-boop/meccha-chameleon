@@ -20,7 +20,7 @@ export class NetworkManager {
   private localSessionId: string = ''
   private gameStateCallbacks: ((state: any) => void)[] = []
 
-  constructor(serverUrl: string = 'ws://localhost:3001') {
+  constructor(serverUrl: string = 'wss://meccha-chameleon-server.onrender.com') {
     this.serverUrl = serverUrl
   }
 
