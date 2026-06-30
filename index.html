@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meccha Chameleon - Hide & Seek Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #222;
+            color: #fff;
+        }
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100vh;
+        }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            z-index: 100;
+        }
+        #ui h2 {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        #ui p {
+            margin: 5px 0;
+            line-height: 1.6;
+        }
+        .info {
+            color: #0f0;
+        }
+        .control {
+            color: #ff9;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h2>🎮 Meccha Chameleon - Phase 3</h2>
+        <p class="info">ENTER — เริ่มเกม</p>
+        <p class="info">WASD — เดิน</p>
+        <p class="info">SPACE — กระโดด (ทั่วไป) / ยืนยันจับ (seeking)</p>
+        <p class="info">เมาส์ — หมุนกล้อง</p>
+        <p class="control">V — สลับ first-person / third-person</p>
+        <p class="control">Click — Lock pointer</p>
+        <p class="control" style="color: #ff69b4; font-weight: bold;">TAB — 🎨 Paint Mode!</p>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
